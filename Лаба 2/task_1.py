@@ -12,8 +12,8 @@ while True:
     # Проверяем, можем ли мы покрыть расходы
     if budget >= spend:
         months += 1  # Увеличиваем счетчик месяцев
-        money_capital -= (spend - salary)  # Обновляем подушку безопасности
-        spend *= (1 + increase)  # Увеличиваем расходы на 5%
+        money_capital -= spend - salary  # Обновляем подушку безопасности
+        spend *= 1 + increase  # Увеличиваем расходы на 5%
     else:
         break  # Если бюджет меньше расходов, выходим из цикла
 
